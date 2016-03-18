@@ -4,7 +4,7 @@ module EnvDependencies
       config.env_dependencies.select do |dependency|
         !ENV.key?(dependency)
       end.each do |dependency|
-        raise "Required environment variable '#{dependency}' is not defined."
+        raise "Required environment variable '#{dependency}' is not set."
       end
     end
   end

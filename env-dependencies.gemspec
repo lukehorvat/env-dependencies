@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = EnvDependencies::VERSION
   spec.authors       = ["Luke Horvat"]
   spec.email         = ["lukehorvat@gmail.com"]
-  spec.summary       = %q{Ruby gem for defining "mandatory" environment variables.}
-  spec.description   = %q{Ruby gem for defining "mandatory" environment variables that your Rails application depends on to run successfully.}
+  spec.summary       = %q{Ruby gem for defining which environment variables must be set in order for your Rails application to function properly.}
+  spec.description   = %q{Ruby gem for defining which environment variables must be set in order for your Rails application to function properly.}
   spec.homepage      = "https://github.com/lukehorvat/env-dependencies"
   spec.license       = "MIT"
   spec.files         = `git ls-files -z`.split("\x0")

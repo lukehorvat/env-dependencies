@@ -1,6 +1,6 @@
 # env-dependencies [![Gem version](http://img.shields.io/gem/v/env-dependencies.svg?style=flat-square)](http://rubygems.org/gems/env-dependencies)
 
-Ruby gem for defining _mandatory_ environment variables that your Rails application depends on to run successfully.
+Ruby gem for defining which environment variables must be set in order for your Rails application to function properly.
 
 ## Installation
 
@@ -31,4 +31,8 @@ class Application < Rails::Application
 end
 ```
 
-When your Rails application starts, an error will be raised immediately if any environment variables are not defined. A nice precautionary measure!
+When your Rails application starts, an error will be raised immediately if any environment variables are not set. A nice precautionary measure!
+
+## Related
+
+If you find this gem useful, you may also like [path-dependencies](https://github.com/lukehorvat/path-dependencies).
